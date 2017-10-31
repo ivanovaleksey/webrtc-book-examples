@@ -155,14 +155,14 @@ function gotLocalDescription(desc) {
       }
     };
 
-    console.log('Start uploading offer');
+    console.log('Start uploading answer');
     fetch(janusHost + '/' + sessionId + '/' + pluginHandleId, {
       method: 'POST',
       body: JSON.stringify(payload)
     }).then(function (resp) {
       return resp.json();
     }).then(function (data) {
-      console.log('Done uploading offer');
+      console.log('Done uploading answer');
       console.log(data);
     });
 }
